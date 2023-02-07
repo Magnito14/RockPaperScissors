@@ -22,7 +22,7 @@ public partial class MainWindow : Window {
     private void MinimizeBtn_Click(object sender, RoutedEventArgs e)
         => WindowState = WindowState.Minimized;
 
-    private void MainBrdr_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e) {
+    private void MainBrdr_MouseDown(object sender, MouseButtonEventArgs e) {
         if (e.LeftButton == MouseButtonState.Pressed) {
             DragMove();
         }
